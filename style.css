@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #010101;
+    --font-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 20pt;
+}
+
+
+#welcome-message {
+    padding-top: 25vh;
+    text-align: center;
+}
+
+#welcome-message h1 {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+#welcome-message h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    opacity: 0.5;
+}
+
+#content{
+    text-align: center;
+}
