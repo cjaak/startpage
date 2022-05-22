@@ -1,5 +1,5 @@
 const NAME = "Charlie";
-
+const GREETING_TEMPLATE = ["night", "morning", "afternoon", "evening"];
 const BOOKMARK_MAP = [
     {
         "section": "Studies",
@@ -31,7 +31,10 @@ const BOOKMARK_MAP = [
 
 
 function showWelcomeMessage(){
-    let greeting = `Hello ${NAME}`
+    let curHours = new Date().getHours();
+    curHours = Math.floor(curHours/6);
+    if (curHours == 4) curHours = 3;
+    let greeting = `Good ${GREETING_TEMPLATE[curHours]} ${NAME}`
     document.getElementById("greeting").innerHTML = greeting
 }
 
