@@ -1,27 +1,27 @@
 const NAME = "Charlie";
 const BOOKMARK_MAP = [
     {
-        "section": "Studies",
+        "section": "General",
         "items":[
-            {"name": "Item 1", "url": "https://google.com/?q=1"},
-            {"name": "Item 2", "url": "https://google.com/?q=2"},
-            {"name": "Item 3", "url": "https://google.com/?q=3"}
+            {"name": "Mail", "url": "https://mail.google.com"},
+            {"name": "Drive", "url": "https://drive.google.com"},
+            {"name": "Calendar", "url": "https://calendar.google.com"},
         ]
     },
     {
-        "section": "Work",
+        "section": "Tech",
         "items":[
-            {"name": "Item 1", "url": "https://google.com/?q=1"},
-            {"name": "Item 2", "url": "https://google.com/?q=2"},
-            {"name": "Item 3", "url": "https://google.com/?q=3"}
+            {"name": "Github", "url": "https://github.com/cjaak/"},
+            {"name": "Arch Wiki", "url": "https://wiki.archlinux.org/"},
+            {"name": "Stackoverflow", "url": "https://stackoverflow.com/"}
         ]
     },
     {
-        "section": "Personal",
+        "section": "Entertainment",
         "items":[
-            {"name": "Item 1", "url": "https://google.com/?q=1"},
-            {"name": "Item 2", "url": "https://google.com/?q=2"},
-            {"name": "Item 3", "url": "https://google.com/?q=3"}
+            {"name": "Youtube", "url": "https://www.youtube.com/"},
+            {"name": "Netflix", "url": "https://www.netflix.com"},
+            {"name": "Twitch", "url": "https://www.twitch.tv/"}
         ]
     }
 ]
