@@ -9,10 +9,12 @@
 :root {
     --bg-color: #010101;
     --font-color: #fff;
+    --bg-image: url(assets/neon-bg.jpg);
 }
 
 body {
     background-color: var(--bg-color);
+    background-size: cover;
     color: var(--font-color);
     font-size: 20pt;
     font-family: 'Source Code Pro', monospace;
@@ -53,8 +55,8 @@ body {
 .section h1 {
     font-weight: 400;
     font-size: 2rem;
-    margin-bottom: 0;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--font-color);
+    margin-bottom: 5;
 }
 
 .section p {
