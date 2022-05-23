@@ -1,5 +1,4 @@
 const NAME = "Charlie";
-const GREETING_TEMPLATE = ["night", "morning", "afternoon", "evening"];
 const BOOKMARK_MAP = [
     {
         "section": "Studies",
@@ -32,9 +31,7 @@ const BOOKMARK_MAP = [
 
 function showWelcomeMessage(){
     let curHours = new Date().getHours();
-    curHours = Math.floor(curHours/6);
-    if (curHours == 4) curHours = 3;
-    let greeting = `Good ${GREETING_TEMPLATE[curHours]} ${NAME}`
+    let greeting = `Good ${determineGreeting(curHours)} ${NAME}`
     document.getElementById("greeting").innerHTML = greeting
 }
 
@@ -62,6 +59,18 @@ function showContent(){
         }
     }
 
+}
+
+function determineGreeting(hour){
+    if(hour >= 22 || hour < 6){
+        return "Night";
+    }else if(hour < 12)
+        return "Morning";
+    else if(hour < 17){
+        return "Afternoon";
+    }else{
+        return "Evening";
+    }
 }
 
 function main(){
